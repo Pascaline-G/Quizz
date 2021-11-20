@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\Pascaline\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\Pascaline\\.nuget\\packages"
+    ]
+  }
+}
