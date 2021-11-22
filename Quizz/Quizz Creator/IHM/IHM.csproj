@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{EC4BD2A2-A13B-4C7F-80BD-00C5A3DD9475}</ProjectGuid>
+    <ProjectGuid>{95D910B0-E4CC-4CAE-920D-6101127E6797}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>IHM</RootNamespace>
     <AssemblyName>IHM</AssemblyName>
@@ -55,6 +55,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="EditCategorie.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -62,6 +66,9 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EditCategorie.xaml.cs">
+      <DependentUpon>EditCategorie.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
@@ -93,6 +100,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="6406280837_e74a8252-b021-4cec-9c98-a07e5a955eba.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Metier\Metier.csproj">
+      <Project>{48e043b3-21a0-47e9-a849-021d99f5c531}</Project>
+      <Name>Metier</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

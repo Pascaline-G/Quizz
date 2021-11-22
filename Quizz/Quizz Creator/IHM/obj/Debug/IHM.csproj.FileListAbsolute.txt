@@ -13,3 +13,5 @@ E:\Prog Perso\QuizzCreator\Prog\Quizz\Quizz Creator\IHM\obj\Debug\IHM.csproj.Gen
 E:\Prog Perso\QuizzCreator\Prog\Quizz\Quizz Creator\IHM\obj\Debug\IHM.csproj.CoreCompileInputs.cache
 E:\Prog Perso\QuizzCreator\Prog\Quizz\Quizz Creator\IHM\obj\Debug\IHM.exe
 E:\Prog Perso\QuizzCreator\Prog\Quizz\Quizz Creator\IHM\obj\Debug\IHM.pdb
+E:\Prog Perso\QuizzCreator\Prog\Quizz\Quizz Creator\IHM\obj\Debug\EditCategorie.g.cs
+E:\Prog Perso\QuizzCreator\Prog\Quizz\Quizz Creator\IHM\obj\Debug\EditCategorie.baml

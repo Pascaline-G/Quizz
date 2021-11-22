@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Storage
 {
-    public class Class1
+    interface IStorage
     {
     }
 }

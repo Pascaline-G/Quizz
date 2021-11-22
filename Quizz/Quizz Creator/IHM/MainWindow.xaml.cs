@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Metier;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,24 @@ namespace IHM
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void AjCategorie(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                Categorie newCat = new Categorie();
+                EditCategorie third = new EditCategorie(newCat);
+                if (third.ShowDialog() == true)
+                {
+                    C(newUnit);
+                    DrawUnits();
+                }
+            }
+            catch (Exception x)
+            {
+                MessageBox.Show(x.Message);
+            }
         }
     }
 }
