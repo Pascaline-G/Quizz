@@ -19,10 +19,10 @@ namespace Metier
             return ListeQuizz.Count();
         }
 
-        public Categorie(String name = "?", String path = "")
+        public Categorie(String name = "?", String path = "Images/Icones/default.png")
         {
-            nom = name;
-            iconPath = path;
+            Nom = name;
+            IconPath = path;
             ListeQuizz = new List<Quizz>();
         }
 

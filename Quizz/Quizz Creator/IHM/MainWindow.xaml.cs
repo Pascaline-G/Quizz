@@ -26,17 +26,13 @@ namespace IHM
             InitializeComponent();
         }
 
-        private void AjCategorie(object sender, RoutedEventArgs e)
+        private void GoCreateQuizz(object sender, RoutedEventArgs e)
         {
             try
             {
-                Categorie newCat = new Categorie();
-                EditCategorie third = new EditCategorie(newCat);
-                if (third.ShowDialog() == true)
-                {
-                    C(newUnit);
-                    DrawUnits();
-                }
+                CreationQuizz second = new CreationQuizz();
+                second.Show();
+                this.Close();
             }
             catch (Exception x)
             {

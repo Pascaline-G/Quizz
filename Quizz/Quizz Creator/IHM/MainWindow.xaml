@@ -5,28 +5,22 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:IHM"
         mc:Ignorable="d"
-        Title="Accueil" Height="450" Width="800">
+        Title="Création de quizz" Height="450" Width="800">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"></ColumnDefinition>
-            <ColumnDefinition Width="*"></ColumnDefinition>
             <ColumnDefinition Width="2*"></ColumnDefinition>
             <ColumnDefinition Width="*"></ColumnDefinition>
-            <ColumnDefinition Width="*"></ColumnDefinition>
+
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="*"></RowDefinition>
             <RowDefinition Height="5*"></RowDefinition>
             <RowDefinition Height="*"></RowDefinition>
         </Grid.RowDefinitions>
-        <ListBox Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Center" Height="272" VerticalAlignment="Center" Width="237"/>
-        <ListBox Grid.Row="1" Grid.Column="3" Grid.ColumnSpan="2" HorizontalAlignment="Center" Height="272" VerticalAlignment="Center" Width="237"/>
-        <Button Grid.Row="2" Grid.Column="0" x:Name="ButtonAddCat" Content="Ajouter" HorizontalAlignment="Center"  VerticalAlignment="Center" Width="75" Click="AjCategorie"/>
-        <Button Grid.Row="2" Grid.Column="1" x:Name="ButtonRemoveCat" Content="Supprimer" HorizontalAlignment="Center"  VerticalAlignment="Center" Width="75"/>
-        <Button Grid.Row="2" Grid.Column="3" x:Name="ButtonAddQuizz" Content="Ajouter" HorizontalAlignment="Center" VerticalAlignment="Center" Width="75"/>
-        <Button Grid.Row="2" Grid.Column="4" x:Name="ButtonRemoveQuizz" Content="Supprimer" HorizontalAlignment="Center"  VerticalAlignment="Center" Width="75"/>
-        <Label  Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Content="Catégories" HorizontalAlignment="Center" VerticalAlignment="Center" Width="264" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Papyrus" FontSize="24"/>
-        <Label Grid.Row="0" Grid.Column="3" Grid.ColumnSpan="2" Content="Quizz" HorizontalAlignment="Center" VerticalAlignment="Center" Width="264" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Papyrus" FontSize="24"/>
-        <Image Grid.Column="2" Grid.Row="1" x:Name="ImageLogo" HorizontalAlignment="Center" Width="244" Source="6406280837_e74a8252-b021-4cec-9c98-a07e5a955eba.png" />
+        <Image Grid.Column="1" Grid.Row="1" x:Name="ImageLogo" HorizontalAlignment="Center" Width="244" Source="Images/logo.png" />
+        <Button Content="Maître du jeu" HorizontalAlignment="Center" Grid.Row="1" VerticalAlignment="Center" Width="100" Click="GoCreateQuizz"/>
+        <Button Content="Joueur" Grid.Column="2" HorizontalAlignment="Left" Margin="55,144,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75"/>
+        <Label  Grid.Row="0" Grid.Column="1" Content="Qui êtes vous ?" HorizontalAlignment="Center" VerticalAlignment="Center" Width="396" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Papyrus" FontSize="24"/>
     </Grid>
 </Window>

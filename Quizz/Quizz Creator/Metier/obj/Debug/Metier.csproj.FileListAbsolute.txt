@@ -1,6 +1,6 @@
 E:\Prog Perso\QuizzCreator\Prog\Quizz\Quizz Creator\Metier\bin\Debug\Metier.dll
 E:\Prog Perso\QuizzCreator\Prog\Quizz\Quizz Creator\Metier\bin\Debug\Metier.pdb
-E:\Prog Perso\QuizzCreator\Prog\Quizz\Quizz Creator\Metier\obj\Debug\Metier.csproj.AssemblyReference.cache
 E:\Prog Perso\QuizzCreator\Prog\Quizz\Quizz Creator\Metier\obj\Debug\Metier.csproj.CoreCompileInputs.cache
 E:\Prog Perso\QuizzCreator\Prog\Quizz\Quizz Creator\Metier\obj\Debug\Metier.dll
 E:\Prog Perso\QuizzCreator\Prog\Quizz\Quizz Creator\Metier\obj\Debug\Metier.pdb
+E:\Prog Perso\QuizzCreator\Prog\Quizz\Quizz Creator\Metier\obj\Debug\Metier.csproj.AssemblyReference.cache

@@ -5,9 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:IHM"
         mc:Ignorable="d"
-        Title="Catégorie" Height="260" Width="340">
+        Title="Catégorie" Height="260" Width="484.667">
     <Grid>
         <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1.5*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
             <ColumnDefinition Width="*"></ColumnDefinition>
             <ColumnDefinition Width="*"></ColumnDefinition>
             <ColumnDefinition Width="*"></ColumnDefinition>
@@ -16,12 +18,16 @@
             <RowDefinition Height="*"></RowDefinition>
             <RowDefinition Height="*"></RowDefinition>
             <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
         </Grid.RowDefinitions>
-        <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Content="Catégorie" HorizontalAlignment="Left" Margin="20,20,20,0" VerticalAlignment="Top" Width="124" FontFamily="Papyrus" FontSize="24"/>
-        <Button Grid.Row="2" Grid.Column="0" x:Name="ButtonValider" Content="Valider" HorizontalAlignment="Center" VerticalAlignment="Center" Width="75"/>
-        <Button Grid.Row="2" Grid.Column="2" x:Name="ButtonCancel" Content="Annuler" HorizontalAlignment="Center" VerticalAlignment="Center" Width="75"/>
-        <Label Grid.Row="1" Grid.Column="0" Content="Nom :" HorizontalAlignment="Center"  VerticalAlignment="Center" Width="42"/>
-        <TextBox Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" Height="23" TextWrapping="Wrap" Text="Nom de la catégorie" VerticalAlignment="Center" HorizontalAlignment="Center" Width="200"/>
-
+        <Label Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2" Content="Catégorie" HorizontalAlignment="Left" Margin="20,0" VerticalAlignment="Center" Width="124" FontFamily="Papyrus" FontSize="24"/>
+        <Button Grid.Row="3" Grid.Column="1" x:Name="ButtonValider" Content="Valider" HorizontalAlignment="Center" VerticalAlignment="Center" Width="75" Click="Valider"/>
+        <Button Grid.Row="3" Grid.Column="4" x:Name="ButtonCancel" Content="Annuler" HorizontalAlignment="Center" VerticalAlignment="Center" Width="75"/>
+        <Label Grid.Row="1" Grid.Column="1" Content="Nom :" HorizontalAlignment="Center"  VerticalAlignment="Center" Width="42"/>
+        <TextBox x:Name="TBNom" Grid.Row="1" Grid.Column="2" Grid.ColumnSpan="3" Height="23" TextWrapping="Wrap" Text="Nom de la catégorie" VerticalAlignment="Center" HorizontalAlignment="Left" Width="200"/>
+        <Label Grid.Row="2" Grid.Column="1" Content="Image :" HorizontalAlignment="Center"  VerticalAlignment="Center" Width="50"/>
+        <TextBox x:Name="TBpathImage" Grid.Row="2" Grid.Column="2" Grid.ColumnSpan="2" Height="23" TextWrapping="Wrap" Text="Nom de la catégorie" VerticalAlignment="Center" HorizontalAlignment="Left" Width="150"/>
+        <Button Grid.Row="2" Grid.Column="4" x:Name="ButtonBrowse" Content="Parcourir..." HorizontalAlignment="Center" VerticalAlignment="Center" Width="75" Click="parcourir"/>
+        <Image x:Name="ImageIcon" Source="./Images/default.png" Grid.RowSpan="2" HorizontalAlignment="Center" Height="100" VerticalAlignment="center" Width="100" Grid.Row="1"/>
     </Grid>
 </Window>

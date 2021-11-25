@@ -1,0 +1,47 @@
+﻿<Window x:Class="IHM.CreationQuizz"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:IHM"
+        mc:Ignorable="d"
+        Title="Création de quizz" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="2*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="5*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <ListBox x:Name="LBCat" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Center" Height="272" VerticalAlignment="Center" Width="237">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="{Binding IconPath}"
+                                   Width="50"
+                                   Height="50"
+                                   Margin="10"
+                                   />
+                        <TextBlock Text="{Binding Nom}"
+                                       Margin="10"
+                                       />
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+        <ListBox x:Name="LBQuizz" Grid.Row="1" Grid.Column="3" Grid.ColumnSpan="2" HorizontalAlignment="Center" Height="272" VerticalAlignment="Center" Width="237"/>
+        <Button Grid.Row="2" Grid.Column="0" x:Name="ButtonAddCat" Content="Ajouter" HorizontalAlignment="Center"  VerticalAlignment="Center" Width="75" Click="AjCategorie"/>
+        <Button Grid.Row="2" Grid.Column="1" x:Name="ButtonRemoveCat" Content="Supprimer" HorizontalAlignment="Center"  VerticalAlignment="Center" Width="75"/>
+        <Button Grid.Row="2" Grid.Column="3" x:Name="ButtonAddQuizz" Content="Ajouter" HorizontalAlignment="Center" VerticalAlignment="Center" Width="75"/>
+        <Button Grid.Row="2" Grid.Column="4" x:Name="ButtonRemoveQuizz" Content="Supprimer" HorizontalAlignment="Center"  VerticalAlignment="Center" Width="75"/>
+        <Label  Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Content="Catégories" HorizontalAlignment="Center" VerticalAlignment="Center" Width="264" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Papyrus" FontSize="24"/>
+        <Label Grid.Row="0" Grid.Column="3" Grid.ColumnSpan="2" Content="Quizz" HorizontalAlignment="Center" VerticalAlignment="Center" Width="264" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Papyrus" FontSize="24"/>
+        <Image Grid.Column="2" Grid.Row="1" x:Name="ImageLogo" HorizontalAlignment="Center" Width="244" Source="Images/logo.png" />
+    </Grid>
+</Window>
